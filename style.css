@@ -11,7 +11,7 @@ nav {background-color: black !important;}
 .card {
   background-color: gray !important;
   border-color: white !important;
-  margin-bottom: 25px;
+  margin-bottom: 25px !important;
 }
 
 .nav-link {
