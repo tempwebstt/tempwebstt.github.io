@@ -1,0 +1,24 @@
+body {background-color: gray !important;}
+h1,h2,h3,h4,h5,h6,p {color: white !important;}
+nav {background-color: black !important;}
+.main {padding: 20px}
+
+.card-title {
+  color: #fffe54 !important;
+  text-shadow: 2px 1px black, 3px 2px white;
+}
+
+.card {
+  background-color: gray !important;
+  border-color: white !important;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: #fffe54 !important;
+}
+
+.nav-link:hover {
+  color: white !important;
+  border-bottom: 1px solid red !important;
+}
