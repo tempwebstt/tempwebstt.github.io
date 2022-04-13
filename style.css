@@ -2,6 +2,7 @@ body {background-color: gray !important;}
 h1,h2,h3,h4,h5,h6,p {color: white !important;}
 nav {background-color: black !important;}
 .main {padding: 20px}
+.main .card {margin-bottom: 25px !important;}
 
 .card-title {
   color: #fffe54 !important;
@@ -11,7 +12,6 @@ nav {background-color: black !important;}
 .card {
   background-color: gray !important;
   border-color: white !important;
-  margin-bottom: 25px !important;
 }
 
 .nav-link {
