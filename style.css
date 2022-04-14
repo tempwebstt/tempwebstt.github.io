@@ -1,11 +1,17 @@
+h1,h2,h3,h4,h5,h6,p,label {color: white !important;}
 body {background-color: gray !important;}
-h1,h2,h3,h4,h5,h6,p {color: white !important;}
 nav {background-color: black !important;}
-.main {padding: 20px}
-.main .card {margin-bottom: 25px !important;}
+select {color: black !important;}
+label {font-weight: bold;}
+
+.main > .card {margin-bottom: 25px !important;}
+.main {padding: 20px;}
+
+.modal-header > *, .modal-body > * {color: black !important;}
 
 .card-title {
   color: #fffe54 !important;
+  font-weight: normal !important;
   text-shadow: 2px 1px black, 3px 2px white;
 }
 
@@ -21,5 +27,5 @@ nav {background-color: black !important;}
 
 .nav-link:hover {
   color: white !important;
-  border-bottom: 1px solid red !important;
+  border-bottom: 1px solid #fffe54 !important;
 }
