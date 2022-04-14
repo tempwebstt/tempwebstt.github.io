@@ -15,11 +15,6 @@ label {font-weight: bold;}
   text-shadow: 2px 1px black, 3px 2px white;
 }
 
-.card {
-  background-color: gray !important;
-  border-color: white !important;
-}
-
 .nav-link {
   font-weight: bold;
   color: #fffe54 !important;
