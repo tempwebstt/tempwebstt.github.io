@@ -1,26 +1,48 @@
-h1,h2,h3,h4,h5,h6,p,label {color: white !important;}
-body {background-color: gray !important;}
-nav {background-color: black !important;}
+:root {
+  --bg: gray;
+  --nav: black;
+  --text: white;
+  --logo: #fffe54;
+  --pad: 10px;
+}
+
+h1,h2,h3,h4,h5,h6,p,label {color: var(--text) !important;}
+nav, .sidenav {background-color: var(--nav) !important;}
+body {background-color: var(--bg) !important;}
+.light {color: var(--logo) !important;}
+
 select {color: black !important;}
 label {font-weight: bold;}
+form {width: 100% !important;}
+.sidenav {height: 200vh;}
 
-.main > .card {margin-bottom: 25px !important;}
-.main {padding: 20px;}
-
-.modal-header > *, .modal-body > * {color: black !important;}
+.main {
+  width: 100% !important;
+  padding: 20px !important;
+}
 
 .card-title {
-  color: #fffe54 !important;
+  color: var(--logo) !important;
   font-weight: normal !important;
   text-shadow: 2px 1px black, 3px 2px white;
 }
 
 .nav-link {
+  width: 250px;
   font-weight: bold;
-  color: #fffe54 !important;
+  border-radius: 10px 0 0 10px !important;
+  border-radius: 0 !important;
+  color: var(--logo) !important;
+  margin-left: var(--pad) !important;
 }
 
-.nav-link:hover {
+.nav-link.active {
+  font-size: 120%;
   color: white !important;
-  border-bottom: 1px solid #fffe54 !important;
+  border-radius: 10px 0 0 10px !important;
+  background-color: var(--bg) !important;
+}
+
+.btntitle:hover {
+  text-decoration: underline;
 }
