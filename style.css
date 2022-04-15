@@ -3,18 +3,76 @@
   --nav: black;
   --text: white;
   --logo: #fffe54;
+  --logod: #dfde4b;
   --pad: 10px;
 }
 
-h1,h2,h3,h4,h5,h6,p,label {color: var(--text) !important;}
+h1,h2,h3,h4,h5,h6,p,label,li {color: var(--text) !important;}
 nav, .sidenav {background-color: var(--nav) !important;}
 body {background-color: var(--bg) !important;}
 .light {color: var(--logo) !important;}
-
 select {color: black !important;}
 label {font-weight: bold;}
-form {width: 100% !important;}
-.sidenav {height: 200vh;}
+nav {border-bottom: 2px solid white;}
+.filler {flex-grow: 1; border-right: 2px solid white;}
+
+a {color: var(--logo) !important;}
+a:hover {
+  color: var(--logod) !important;
+  text-decoration: underline !important;
+}
+
+.deftext {font-weight:normal !important;}
+.logotext {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  transform: rotate(-5deg) !important;
+}
+
+.modal-header, .modal-body, .modal-footer {
+  color: white !important;
+  background-color: var(--bg) !important;
+}
+
+
+.underlined {
+  position: relative;
+  margin-right: 1rem;
+}
+.underlined:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  border: solid 2px var(--logo);
+  border-color: var(--logo) transparent transparent transparent;
+  border-radius: 50%;
+}
+
+.list-group-item > * {color: black !important;}
+.list-group-item > * > h4 {
+  font-weight: bold;
+  color: black !important;
+}
+
+.form-control.is-invalid, {border-width: 2px !important;}
+.form-control.is-valid {border-width: 0;}
+.form-check-input.is-invalid {
+  border-width: 2px !important;
+  background-color: white;
+}
+
+form, .daten {
+  margin: auto;
+  width: 60% !important;
+}
+
+.sidenav {
+  height: 100vh;
+  margin-top: -4px;
+  border-top: 2px solid black;
+}
 
 .main {
   width: 100% !important;
@@ -30,6 +88,8 @@ form {width: 100% !important;}
 .nav-link {
   width: 250px;
   font-weight: bold;
+  outline: 0 !important;
+  border-right: 2px solid white !important;
   border-radius: 10px 0 0 10px !important;
   border-radius: 0 !important;
   color: var(--logo) !important;
@@ -39,6 +99,9 @@ form {width: 100% !important;}
 .nav-link.active {
   font-size: 120%;
   color: white !important;
+  border-color: white !important;
+  border-style: solid !important;
+  border-width: 2px 0px 2px 2px !important;
   border-radius: 10px 0 0 10px !important;
   background-color: var(--bg) !important;
 }
